@@ -19,8 +19,8 @@ This project requires streamlit, dataclasses, typing, datetime, pandas and hashl
 
 5. Test the blockchain validation process by clicking the 'Validate Chain' button.
 
-# PyChain Demo
+# PyChain Streamlit Demo
 For video demo of the streamlit web interface, download `PyChain-demo.mov` in this repository.
 
-# Streamlit Web Interface Screenshot
+# PyChain Streamlit Web Interface Screenshot
 ![streamlit-blockchain](Images/PychainDemo.png)
