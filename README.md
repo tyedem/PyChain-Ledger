@@ -8,16 +8,16 @@ In this project, I have taken on the role of a fintech engineer. My task is to b
 ## Libraries
 This project requires streamlit, dataclasses, typing, datetime, pandas and hashlib
 
-## Running Streamlit Webapp
+## Running Streamlit Web Interface
 1. In the terminal, navigate to the folder where `pychain.py` is stored.
 
 2. In the terminal, run the Streamlit application by using `streamlit run pychain.py`.
 
-3. Enter values for the sender, receiver, and amount, and then click the "Add Block" button. You can do this several times to store several blocks in the ledger. You can even toggle the block difficulty with the slider on the lefthand side of the webapp interface.
+3. Enter values for the sender, receiver, and amount, and then click the "Add Block" button. You can do this several times to store several blocks in the ledger. You can even toggle the block difficulty with the slider on the lefthand side of the web interface.
 
 4. Verify the block contents and hashes in the Streamlit dropdown menu.
 
 5. Test the blockchain validation process by clicking the 'Validate Chain' button.
 
-# Streamlit Webapp Screenshot
+# Streamlit Web Interface Screenshot
 ![streamlit-blockchain](Images/PychainDemo.png)
