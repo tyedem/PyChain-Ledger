@@ -15,9 +15,9 @@ This project requires streamlit, dataclasses, typing, datetime, pandas and hashl
 
 3. Enter values for the sender, receiver, and amount, and then click the "Add Block" button. You can do this several times to store several blocks in the ledger. You can even toggle the block difficulty with the slider on the lefthand side of the webapp interface.
 
-4. Verify the vlock contents and hashes in the Streaml;it dropdown menu.
+4. Verify the block contents and hashes in the Streamlit dropdown menu.
 
 5. Test the blockchain validation process by clicking the 'Validate Chain' button.
 
-# Streamlit Webapp Example
+# Streamlit Webapp Screenshot
 ![streamlit-blockchain](Images/PychainDemo.png)
