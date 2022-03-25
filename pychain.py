@@ -50,8 +50,8 @@ import hashlib
 # `amount` attributes
 @dataclass
 class Record:
-    sender: int
-    receiver: int
+    sender: str
+    receiver: str
     amount: float
 
 
@@ -70,7 +70,7 @@ class Record:
 class Block:
 
     # Rename the `data` attribute to `record`, and set the data type to `Record`
-    record: List[Record]
+    record: Record
 
     creator_id: int
     prev_hash: str = "0"
@@ -170,10 +170,10 @@ pychain = setup()
 #input_data = st.text_input("Block Data")
 
 # Add an input area where you can get a value for `sender` from the user.
-input_sender = st.text_input('Sender Account')
+input_sender = st.text_input('Sender')
 
 # Add an input area where you can get a value for `receiver` from the user.
-input_receiver = st.text_input('Receiver Account')
+input_receiver = st.text_input('Receiver')
 
 # Add an input area where you can get a value for `amount` from the user.
 input_amount = st.text_input('Amount')
