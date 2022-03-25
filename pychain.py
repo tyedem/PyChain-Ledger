@@ -25,7 +25,7 @@
 # Imports
 import streamlit as st
 from dataclasses import dataclass
-from typing import Any, List
+from typing import Any, Dict, List
 import datetime as datetime
 import pandas as pd
 import hashlib
@@ -50,7 +50,7 @@ import hashlib
 # `amount` attributes
 @dataclass
 class Record:
-    send: int
+    sender: int
     receiver: int
     amount: float
 
@@ -173,7 +173,7 @@ pychain = setup()
 input_sender = st.text_input('Sender Account')
 
 # Add an input area where you can get a value for `receiver` from the user.
-input_receiver = st.text_input('Receiver Amount')
+input_receiver = st.text_input('Receiver Account')
 
 # Add an input area where you can get a value for `amount` from the user.
 input_amount = st.text_input('Amount')
@@ -186,7 +186,7 @@ if st.button("Add Block"):
     # which is set equal to a `Record` that contains the `sender`, `receiver`,
     # and `amount` values
     new_block = Block(
-        record=List[Record],
+        record=Record(input_sender, input_receiver, input_amount),
         creator_id=42,
         prev_hash=prev_block_hash
     )
